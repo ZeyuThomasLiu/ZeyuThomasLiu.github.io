@@ -7,3 +7,9 @@ venue: "Columbia University, Computer Science Department"
 date: 2021-05-15
 location: "New York, USA"
 ---
+
+Term: Summer 2021
+
+Instructor: Prof. Periklis Papakonstantinou
+
+Role: Graudate Course Assistant
