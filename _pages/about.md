@@ -16,4 +16,4 @@ redirect_from:
 
 # News
 
-- I recently received a [scholarship](https://grants.zfnd.org/proposals/470030928) from [Zcash Open Major Grants (ZOMG)](https://zcashomg.org/) to the first year of my (to-be-determined) PhD program.
+- I recently received a [scholarship](https://grants.zfnd.org/proposals/470030928) from [Zcash Open Major Grants (ZOMG)](https://zcashomg.org/) to support the first year of my (to-be-determined) PhD program.
