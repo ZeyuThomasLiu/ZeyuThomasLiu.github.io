@@ -13,3 +13,7 @@ redirect_from:
 - I also work part time as a research scientist trainee at [Duality Technologies Inc.](https://dualitytech.com/), where I am fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/), and to work with Prof. [Daniele Micciancio](https://cseweb.ucsd.edu/~daniele/).
 
 - My main research interests lie in the general area of cryptography, including lattice-based cryptography, blockchain-based cryptographic protocols, information-theoretic cryptography, quantum cryptography, and differential privacy. Most of my recent research projects focus on Fully Homomorphic Encryption schemes and their applications. Please see [here](https://zeyuthomasliu.github.io/publications/) for details.
+
+# News
+
+- I recently received a [scholarship](https://grants.zfnd.org/proposals/470030928) from [Zcash Open Major Grants (ZOMG)](https://zcashomg.org/) to the first year of my (to-be-determined) PhD program.
