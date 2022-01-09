@@ -16,7 +16,7 @@ redirect_from:
 
 # More about me
 
-- Please see my CV [here](https://zeyuthomasliu.github.io/files/CV.pdf).
+- Please see my CV [here](https://zeyuthomasliu.github.io/files/CV.pdf) for more details.
 
 # News
 
