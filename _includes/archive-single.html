@@ -44,12 +44,12 @@
         {% if post.eprint %}
           <p>Available on: {{ post.eprint }} </p>
         {% endif %}
-        {% if post.venue %}
+        {% if post.venue and post.collection == 'publications'%}
           <p>Published in: {{ post.venue }} </p>
         {% endif %}
 
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> Instructor: {{post.instructor}} </p> Term: {{post.term}}
         {% elsif post.collection == 'publications' and page.venue %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}

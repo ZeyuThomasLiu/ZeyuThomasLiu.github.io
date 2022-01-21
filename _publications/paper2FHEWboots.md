@@ -2,7 +2,7 @@
 title: "Large-Precision Homomorphic Sign Evaluation using FHEW/TFHE Bootstrapping"
 collection: publications
 permalink: /publications/paper2FHEWboots
-excerpt: 'This paper is about FHEW/TFHE functional bootstrapping.'
+excerpt: 'This paper is about FHEW/TFHE efficient functional bootstrapping, including large-precision sign evaluation, arbitrary function evaluation, homomorphic digit decomposition, etc.'
 date: 2021-10-04
 eprint: 'ePrint; In submission to Eurocrypt 2022.'
 authors: <ins>Zeyu Liu</ins>, Daniele Micciancio, Yuriy Polyakov
