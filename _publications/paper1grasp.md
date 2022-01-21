@@ -5,6 +5,7 @@ permalink: /publications/paper1grasp
 excerpt: 'This paper is about synthesizing diverse and physically stable grasps via force closure.'
 date: 2021-04-19
 venue: 'IEEE Robotics and Automation Letters (RA-L) Special Issue: Robotic Grasping and Manipulation Challenges and Progress'
+authors: Tengyu Liu, <ins>Zeyu Liu</ins>, Ziyuan Jiao, Yixin Zhu, Song-Chun Zhu
 paperurl: 'https://arxiv.org/pdf/2104.09194.pdf'
 #citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---

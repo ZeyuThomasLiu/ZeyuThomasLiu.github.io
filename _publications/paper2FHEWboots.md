@@ -4,7 +4,8 @@ collection: publications
 permalink: /publications/paper2FHEWboots
 excerpt: 'This paper is about FHEW/TFHE functional bootstrapping.'
 date: 2021-10-04
-venue: 'ePrint, in submission'
+eprint: 'ePrint; In submission to Eurocrypt 2022.'
+authors: <ins>Zeyu Liu</ins>, Daniele Micciancio, Yuriy Polyakov
 paperurl: 'https://eprint.iacr.org/2021/1337.pdf'
 #citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
