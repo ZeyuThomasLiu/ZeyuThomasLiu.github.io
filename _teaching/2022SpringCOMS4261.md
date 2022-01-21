@@ -1,5 +1,5 @@
 ---
-title: "COMS 4261 – Introduction to Cryptography, Graduate Course Assistant"
+title: "COMS 4261 – Introduction to Cryptography"
 collection: teaching
 type: "Graudate Course Assistant"
 #permalink: /teaching/2022SpringCOMS4261

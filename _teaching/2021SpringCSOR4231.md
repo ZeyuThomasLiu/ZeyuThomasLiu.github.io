@@ -1,5 +1,5 @@
 ---
-title: "CSOR 4231 – Analysis of Algorithms, Graduate Course Assistant"
+title: "CSOR 4231 – Analysis of Algorithms"
 collection: teaching
 type: "Graudate Course Assistant"
 #permalink: /teaching/2021SpringCSOR4231
