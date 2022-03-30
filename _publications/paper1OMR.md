@@ -4,7 +4,7 @@ collection: publications
 permalink: /publications/paper1OMR
 excerpt: 'This paper is about the Oblivious Message Retrieval for anonymous message delivery systems, such as private messaging services and privacy-preserving payment systems, need a mechanism for recipients to retrieve the messages addressed to them, without leaking metadata or letting their messages be linked.'
 date: 2021-09-20
-eprint: 'ePrint; Contributed Talk at RWC 2022; In submission to USENIX 2022.'
+eprint: 'ePrint; Contributed Talk at RWC 2022; In submission to CRYPTO 2022.'
 authors: <ins>Zeyu Liu</ins>, Eran Tromer
 paperurl: 'https://eprint.iacr.org/2021/1256.pdf'
 #citation: ''

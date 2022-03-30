@@ -20,4 +20,6 @@ redirect_from:
 
 # News
 
+- Our paper about [symmetric PIR](https://zeyuthomasliu.github.io/publications/paper3XSPIR) got accepted to [ESORICS 2022](https://esorics2022.compute.dtu.dk/).
+
 - I recently received a [scholarship](https://grants.zfnd.org/proposals/470030928) from [Zcash Open Major Grants (ZOMG)](https://zcashomg.org/) to support the first year of my (to-be-determined) PhD program.
