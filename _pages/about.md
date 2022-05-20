@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-- I am joining  the [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/) starting fall 2022 as a Ph.D. student. Prior to that, I obtained my Master's degree from [Columbia University](https://www.columbia.edu/), where I am fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://www.tau.ac.il/~tromer/). 
+- I am joining  the [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/) starting fall 2022 as a Ph.D. student. Prior to that, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I am fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://www.tau.ac.il/~tromer/). 
 
 - I also work part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I am fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/), and to work with Prof. [Daniele Micciancio](https://cseweb.ucsd.edu/~daniele/).
 
@@ -22,7 +22,7 @@ redirect_from:
 
 - Our paper [OMR](https://zeyuthomasliu.github.io/publications/paper1OMR) got accepted to [CRYPTO 2022](https://crypto.iacr.org/2022/).
 
-- I just received the Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service at Columbia university.
+- I just received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2017/top-students-in-computer-science-receive-awards/) at Columbia university.
 
 - I am joining the [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/) starting fall 2022 as a Ph.D. student! Already met the amazing co-directors of YACL, [Ben Fisch](https://sites.google.com/site/benafisch) and [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/). Looking forward to meeting and working with other members!
 
