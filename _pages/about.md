@@ -20,13 +20,13 @@ redirect_from:
 
 # News
 
-- Our paper [OMR](https://zeyuthomasliu.github.io/publications/paper1OMR) got accepted to [CRYPTO 2022](https://crypto.iacr.org/2022/).
+- Our paper [Oblivious Message Retrieval](https://zeyuthomasliu.github.io/publications/paper1OMR) got accepted to [CRYPTO 2022](https://crypto.iacr.org/2022/).
 
 - I just received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2017/top-students-in-computer-science-receive-awards/) at Columbia university.
 
 - I am joining the [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/) starting fall 2022 as a Ph.D. student! Already met the amazing co-directors of YACL, [Ben Fisch](https://sites.google.com/site/benafisch) and [Charalampos (Babis) Papamanthou](https://www.cs.yale.edu/homes/cpap/). Looking forward to meeting and working with other members!
 
-- Our paper about [symmetric PIR](https://zeyuthomasliu.github.io/publications/paper3XSPIR) got accepted to [ESORICS 2022](https://esorics2022.compute.dtu.dk/).
+- [Our paper about symmetric PIR](https://zeyuthomasliu.github.io/publications/paper3XSPIR) got accepted to [ESORICS 2022](https://esorics2022.compute.dtu.dk/).
 
 - I recently received a [scholarship](https://grants.zfnd.org/proposals/470030928) from [Zcash Open Major Grants (ZOMG)](https://zcashomg.org/) to support the sixth year of my PhD program.
 
