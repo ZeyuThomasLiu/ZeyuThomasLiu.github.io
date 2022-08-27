@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Zeyu (Thomas) Liu"
   avatar           : "photo.png" 
-  bio              : "MSCS student at Columbia University"
-  location         : "New York"
+  bio              : "PhD student at Yale University"
+  location         : "New Haven"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=hb3VtFUAAAAJ"
-  email            : "zl2967@columbia.edu"
+  email            : "zeyu.liu@yale.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
