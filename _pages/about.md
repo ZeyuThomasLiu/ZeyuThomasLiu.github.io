@@ -16,7 +16,7 @@ redirect_from:
 
 # News
 
-- Our paper [Large-precision homomorphic sign evaluation using FHEW/TFHE bootstrapping](https://eprint.iacr.org/2021/133) got accepted to [ASIACRYPT 2022](https://asiacrypt.iacr.org/2022/).
+- Our paper [Large-precision homomorphic sign evaluation using FHEW/TFHE bootstrapping](https://eprint.iacr.org/2021/1337) got accepted to [ASIACRYPT 2022](https://asiacrypt.iacr.org/2022/).
 
 - Our paper [Oblivious Message Retrieval](https://eprint.iacr.org/2021/1256) got accepted to [CRYPTO 2022](https://crypto.iacr.org/2022/).
 
