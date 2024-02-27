@@ -2,6 +2,9 @@
 ---
 
 ### At Yale University
+- CPSC 567/467 Introduction to Cryptography.
+  - Instructor: Katerina Sotiraki
+  - Position: TA
 - CPSC 541/441 Zero-knolwedge Proof. 
   - Instructor: Ben Fisch
   - Position: TA
