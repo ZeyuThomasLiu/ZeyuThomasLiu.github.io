@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-- I am a third year PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/site/benafisch).
+- I am a PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/site/benafisch).
 
 - Before coming to Yale, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I was fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://www.tau.ac.il/~tromer/). During my Master's study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/). Before that, I obtained by Bachelor's degree in CS and Math at [UCLA](https://www.ucla.edu/).
 
@@ -69,7 +69,7 @@ The authors of all the publications below are in alphabetical order. For the ful
   - Asiacrypt 2022
 
 ## Academic Services
-Reviewer at Crypto 2024, 2023, 2022; S&P 2025, 2024; Asiacrypt 2024; PKC 2024; TCC 2023; SCN 2022
+Reviewer at Eurocrypt 2025; Crypto 2024, 2023, 2022; S&P 2025, 2024; Asiacrypt 2024; PKC 2024; TCC 2023; Financial Crypto 2025; SCN 2022
 
 ## Teaching
 Received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2017/top-students-in-computer-science-receive-awards/) in 2022 for the course Introduction to Cryptography at Columbia University.
