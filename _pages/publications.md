@@ -5,15 +5,22 @@ permalink: /publications/
 author_profile: true
 ---
 
-The authors of all the publications below related to cryptography are in alphabetical order, unless otherwise specified.
+
+The publications below are in alphabetical order, unless marked by *.
 
 ### Published
+
+- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption." Eurocrypt 2025.
+
+- Tiantian Gong, <u>Zeyu Liu</u>. "Rational Secret Sharing with Competition." FC 2025.
+
+- Tiantian Gong\*, <u>Zeyu Liu</u>, Aniket Kate. "The Case of FBA as a DEX Processing Model." FC 2025.
 
 - <u>Zeyu Liu</u>, Yunhao Wang. "Relaxed Functional Bootstrapping: A New Perspective on BGV/BFV Bootstrapping." Asiacrypt 2024.
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Charalampos Papamanthou. "ThorPIR: Single Server PIR via Homomorphic Thorp Shuffles." CCS 2024.
 
-- Lulu Zhou _(first author)_, <u>Zeyu Liu</u>, Fan Zhang, Michael K. Reiter "CrudiTEE: A Stick-and-Carrot Approach to Building Trustworthy Cryptocurrency Wallets with TEEs." AFT 2024.
+- Lulu Zhou\*, <u>Zeyu Liu</u>, Fan Zhang, Michael K. Reiter "CrudiTEE: A Stick-and-Carrot Approach to Building Trustworthy Cryptocurrency Wallets with TEEs." AFT 2024.
 
 - <u>Zeyu Liu</u>, Eran Tromer, Yunhao Wang. "PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation." Usenix Security 2024.
 
@@ -35,13 +42,11 @@ The authors of all the publications below related to cryptography are in alphabe
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)."
 
-- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR." _(Authors are ordered in students followed by advisors, alphabetically.)_
-
-- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Snake-eye Resistance from LWE for Oblivious Message Retrieval and Robust Encryption."
+- Arthur Lazzaretti\*, <u>Zeyu Liu</u>\*, Ben Fisch, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR."
 
 - Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling."
 
 
 ### Non-cryptography
 
-- Liu, Tengyu _(first author)_, <u>Zeyu Liu</u>, Ziyuan Jiao, Yixin Zhu and Song-Chun Zhu. "Synthesizing Diverse and Physically Stable Grasps With Arbitrary Hand Structures Using Differentiable Force Closure Estimator." IEEE Robotics and Automation Letters 7 (2022): 470-477.
+- Liu, Tengyu\*, <u>Zeyu Liu</u>, Ziyuan Jiao, Yixin Zhu and Song-Chun Zhu. "Synthesizing Diverse and Physically Stable Grasps With Arbitrary Hand Structures Using Differentiable Force Closure Estimator." IEEE Robotics and Automation Letters 7 (2022): 470-477.

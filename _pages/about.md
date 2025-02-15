@@ -12,14 +12,18 @@ redirect_from:
 
 - Before coming to Yale, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I was fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://www.tau.ac.il/~tromer/). During my Master's study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/). Before that, I obtained by Bachelor's degree in CS and Math at [UCLA](https://www.ucla.edu/).
 
-- My main research interests lie in the general area of cryptography, including lattice-based cryptography, blockchain-based cryptographic protocols, and so on.
+- My main research interests lie in the general area of cryptography, including lattice-based cryptography, blockchain-related cryptographic protocols, and so on.
 
 ## Selected Publications (Reverse Chronological Order)
-The authors of all the publications below are in alphabetical order. For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
+Authors are in alphabetical order for all the publications below . For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
 
 ### Published
 
-- <u>Zeyu Liu</u>, Yunhao Wang. "Relaxed Functional Bootstrapping: A New Perspective on BGV/BFV Bootstrapping." Asiacrypt 2024.
+- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption." Eurocrypt 2025.
+
+- Tiantian Gong, <u>Zeyu Liu</u>. "Rational Secret Sharing with Competition." FC 2025.
+
+- <u>Zeyu Liu</u>, Yunhao Wang. "Relaxed Functional Bootstrapping: A New Perspective on BGV and BFV Bootstrapping." Asiacrypt 2024.
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Charalampos Papamanthou. "ThorPIR: Single Server PIR via Homomorphic Thorp Shuffles." CCS 2024.
 
@@ -41,32 +45,41 @@ The authors of all the publications below are in alphabetical order. For the ful
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)."
 
-- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Snake-eye Resistance from LWE for Oblivious Message Retrieval and Robust Encryption."
-
 - Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling."
 
-## Talks
+## Talks (Ordered by Topics)
 
-- Snake-eye Resistance from LWE for Oblivious Message Retrieval and Robust Encryption
-  - NYU Crypto Reading Group
-  - Purdue Crypto Reading Group
-
-- PerfOMR
-  - Usenix 2024
-
-- (Group) Oblivious Message Retrieval
+- Oblivious Message Retrieval / Group Oblivious Message Retrieval
   - Crypto 2022
   - MIT CSAIL Security Seminar
   - Brown University Cryptography Reading Group
   - S&P 2024
 
-- Amortized Functional Bootstrapping
+- Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption
+  - NYU Crypto Reading Group
+  - Purdue Crypto Reading Group
+
+- PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation
+  - Usenix 2024
+
+- Relaxed Functional Bootstrapping: A New Perspective on BGV and BFV Bootstrapping.
+  - NYU Crypto Reading Group
+  - Asiacrypt 2024
+  - FHE.org Meetup
+
+- Amortized Functional Bootstrapping in less than 7ms, with  $\tilde{O}(1)$ polynomial multiplications.
   - Ant Research FHE Seminar
   - NYC Crypto Day
   - Asiacrypt 2023
 
 - Large-precision homomorphic sign evaluation using FHEW/TFHE bootstrapping
   - Asiacrypt 2022
+
+- ThorPIR: Single Server PIR via Homomorphic Thorp Shuffles
+  - CCS 2024
+
+- Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)
+  - Penn's Security and Privacy Lab Seminar
 
 ## Academic Services
 Reviewer at Eurocrypt 2025; Crypto 2024, 2023, 2022; S&P 2025, 2024; Asiacrypt 2024; PKC 2024; TCC 2023; Financial Crypto 2025; SCN 2022

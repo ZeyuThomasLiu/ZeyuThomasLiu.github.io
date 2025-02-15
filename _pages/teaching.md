@@ -9,7 +9,11 @@ author_profile: true
 - CPSC 567/467 Introduction to Cryptography.
   - Instructor: Katerina Sotiraki
   - Position: TA
-  - Term: Spring 2024
+  - Term: Spring 2024, Spring 2025
+- CPSC 417/517: Advanced Topics in Cryptography: Cryptography and Computation
+  - Instructor: Charalampos Papamanthou
+  - Position: TA
+  - Term: Fall 2024
 - CPSC 541/441 Zero-knolwedge Proof. 
   - Instructor: Ben Fisch
   - Position: TA
