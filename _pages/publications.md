@@ -10,6 +10,8 @@ The publications below are in alphabetical order, unless marked by *.
 
 ### Published
 
+- Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)." S&P 2025.
+
 - <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption." Eurocrypt 2025.
 
 - Tiantian Gong, <u>Zeyu Liu</u>. "Rational Secret Sharing with Competition." FC 2025.
@@ -40,7 +42,7 @@ The publications below are in alphabetical order, unless marked by *.
 
 ### In submission (available on eprint)
 
-- Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)."
+- Xinxuan Zhang\*, Ruida Wang, <u> Zeyu Liu </u>, Binwu Xiang, Yi Deng, Xianhui Lu. "FHE-SNARK vs. SNARK-FHE: From Analysis to Practical Verifiable Computation."
 
 - Arthur Lazzaretti\*, <u>Zeyu Liu</u>\*, Ben Fisch, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR."
 

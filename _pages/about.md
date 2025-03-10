@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "About Me"
+excerpt: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,14 +10,18 @@ redirect_from:
 
 - I am a PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/site/benafisch).
 
-- Before coming to Yale, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I was fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://www.tau.ac.il/~tromer/). During my Master's study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/). Before that, I obtained by Bachelor's degree in CS and Math at [UCLA](https://www.ucla.edu/).
+- Before coming to Yale, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I was fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://cs-people.bu.edu/tromer/). During my Master's study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/). Before that, I obtained by Bachelor's degree in CS and Math at [UCLA](https://www.ucla.edu/).
 
 - My main research interests lie in the general area of cryptography, including lattice-based cryptography, blockchain-related cryptographic protocols, and so on.
 
 ## Selected Publications (Reverse Chronological Order)
-Authors are in alphabetical order for all the publications below . For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
+Authors are in alphabetical order for all the publications below. 
+For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
+
 
 ### Published
+
+- Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)." S&P 2025.
 
 - <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption." Eurocrypt 2025.
 
@@ -31,7 +35,7 @@ Authors are in alphabetical order for all the publications below . For the full 
 
 - <u>Zeyu Liu</u>, Eran Tromer, Yunhao Wang. "Group Oblivious Message Retrieval." S&P 2024.
 
-- <u>Zeyu Liu</u>, Yunhao Wang. "Amortized Functional Bootstrapping in less than 7ms, with  $\tilde{O}(1)$ polynomial multiplications." Asiacrypt 2023.
+- <u>Zeyu Liu</u>, Yunhao Wang. "Amortized Functional Bootstrapping in less than 7ms, with $\tilde{O}(1)$ polynomial multiplications." Asiacrypt 2023.
 
 - Ben Fisch, <u>Zeyu Liu</u>, Psi Vesely. "Orbweaver: Succinct Linear Functional Commitments from Lattices." Crypto 2023
 
@@ -43,11 +47,9 @@ Authors are in alphabetical order for all the publications below . For the full 
 
 ### In submission (available on eprint)
 
-- Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)."
-
 - Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling."
 
-## Talks (Ordered by Topics)
+## Talks (Grouped by Topics)
 
 - Oblivious Message Retrieval / Group Oblivious Message Retrieval
   - Crypto 2022
@@ -82,7 +84,7 @@ Authors are in alphabetical order for all the publications below . For the full 
   - Penn's Security and Privacy Lab Seminar
 
 ## Academic Services
-Reviewer at Eurocrypt 2025; Crypto 2024, 2023, 2022; S&P 2025, 2024; Asiacrypt 2024; PKC 2024; TCC 2023; Financial Crypto 2025; SCN 2022
+Reviewer at Crypto 2025, 2024, 2023, 2022; Eurocrypt 2025; S&P 2025, 2024; Asiacrypt 2024; PKC 2024; TCC 2023; Financial Crypto 2025; SCN 2022
 
 ## Teaching
 Received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2017/top-students-in-computer-science-receive-awards/) in 2022 for the course Introduction to Cryptography at Columbia University.
