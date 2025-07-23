@@ -8,18 +8,28 @@ redirect_from:
   - /about.html
 ---
 
+- I am visiting [CMU](https://www.cmu.edu/) in summer 2025, hosted by Prof. [Aayush Jain](https://sites.google.com/view/aayushjain/home).
+
 - I am a PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/site/benafisch).
 
 - Before coming to Yale, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I was fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://cs-people.bu.edu/tromer/). During my Master's study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/). Before that, I obtained by Bachelor's degree in CS and Math at [UCLA](https://www.ucla.edu/).
 
-- My main research interests lie in the general area of cryptography, including lattice-based cryptography, blockchain-related cryptographic protocols, and so on.
+- My main research interests lie in the general area of cryptography, including lattice-based cryptography, fully homomorphic encryption, metadata privacy, and so on.
+
+- If you are interested, please also check out my bunny, [Baoliu](https://zeyuthomasliu.github.io/baoliu/).
 
 ## Selected Publications (Reverse Chronological Order)
-Authors are in alphabetical order for all the publications below. 
+Authors are in alphabetical order (either in all authors or in all student authors) for all the publications below. 
 For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
 
 
 ### Published
+
+- <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
+
+- Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling." CSF 2025.
+
+- Chengyu Lin, <u>Zeyu Liu</u>, Peihan Miao, Max Tromanhauser. "Finding Balance in Unbalanced PSI: A New Construction from Single-Server PIR." CiC 2025.
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)." S&P 2025.
 
@@ -45,10 +55,6 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
 
 - <u>Zeyu Liu</u>, Eran Tromer. "Oblivious Message Retrieval." Crypto 2022. 
 
-### In submission (available on eprint)
-
-- Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling."
-
 ## Talks (Grouped by Topics)
 
 - Oblivious Message Retrieval / Group Oblivious Message Retrieval
@@ -56,6 +62,7 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
   - MIT CSAIL Security Seminar
   - Brown University Cryptography Reading Group
   - S&P 2024
+  - FHE.org
 
 - Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption
   - NYU Crypto Reading Group
@@ -84,7 +91,7 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
   - Penn's Security and Privacy Lab Seminar
 
 ## Academic Services
-Reviewer at Crypto 2025, 2024, 2023, 2022; Eurocrypt 2025; S&P 2025, 2024; Asiacrypt 2024; PKC 2024; TCC 2023; Financial Crypto 2025; SCN 2022
+Reviewer at Crypto {2025, 2024, 2023, 2022}; S&P {2026, 2025}; Asiacrypt {2025, 2024}; TCC {2025, 2023}; Eurocrypt 2025; CCS 2025; Financial Crypto 2025; PKC 2024; SCN 2022
 
 ## Teaching
 Received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2017/top-students-in-computer-science-receive-awards/) in 2022 for the course Introduction to Cryptography at Columbia University.

@@ -6,9 +6,17 @@ author_profile: true
 ---
 
 
-The publications below are in alphabetical order, unless marked by *.
+The publications below are in alphabetical order, unless marked by *, which indicates main contributors in alphabetical order.
 
 ### Published
+
+- <u>Zeyu Liu</u>\*, Yunhao Wang\*, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
+
+- Xinxuan Zhang\*, Ruida Wang, <u> Zeyu Liu </u>, Binwu Xiang, Yi Deng, Ben Fisch, Xianhui Lu. "Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data." CCS 2025 (To appear).
+
+- Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling." CSF 2025.
+
+- Chengyu Lin, <u>Zeyu Liu</u>, Peihan Miao, Max Tromanhauser. "Finding Balance in Unbalanced PSI: A New Construction from Single-Server PIR." CiC 2025.
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Lei Yang. "Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)." S&P 2025.
 
@@ -42,11 +50,7 @@ The publications below are in alphabetical order, unless marked by *.
 
 ### In submission (available on eprint)
 
-- Xinxuan Zhang\*, Ruida Wang, <u> Zeyu Liu </u>, Binwu Xiang, Yi Deng, Xianhui Lu. "FHE-SNARK vs. SNARK-FHE: From Analysis to Practical Verifiable Computation."
-
 - Arthur Lazzaretti\*, <u>Zeyu Liu</u>\*, Ben Fisch, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR."
-
-- Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling."
 
 
 ### Non-cryptography
