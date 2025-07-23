@@ -19,7 +19,7 @@ redirect_from:
 - If you are interested, please also check out my bunny, [Baoliu](https://zeyuthomasliu.github.io/baoliu/).
 
 ## Selected Publications (Reverse Chronological Order)
-Authors are in alphabetical order (either in all authors or in all student authors) for all the publications below. 
+Authors are listed in alphabetical order (either among all authors or among all student authors) for all the publications below.
 For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
 
 
