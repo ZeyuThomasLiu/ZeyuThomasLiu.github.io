@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-- I am visiting [CMU](https://www.cmu.edu/) in summer 2025, hosted by Prof. [Aayush Jain](https://sites.google.com/view/aayushjain/home).
+- I am visiting [CMU](https://www.cmu.edu/) in Summer 2025, kindly hosted by Prof. [Aayush Jain](https://sites.google.com/view/aayushjain/home).
 
 - I am a PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/site/benafisch).
 
