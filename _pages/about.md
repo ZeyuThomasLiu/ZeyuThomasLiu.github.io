@@ -89,6 +89,10 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
 
 - Permissionless Verifiable Information Dispersal (Data Availability for Bitcoin Rollups)
   - Penn's Security and Privacy Lab Seminar
+  - S&P 2025
+
+- Scalable Private Signaling
+  - CSF 2025
 
 ## Academic Services
 Reviewer at Crypto {2025, 2024, 2023, 2022}; S&P {2026, 2025}; Asiacrypt {2025, 2024}; TCC {2025, 2023}; Eurocrypt 2025; CCS 2025; Financial Crypto 2025; PKC 2024; SCN 2022
