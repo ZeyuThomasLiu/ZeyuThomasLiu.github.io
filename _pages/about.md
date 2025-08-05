@@ -67,6 +67,7 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
 - Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption
   - NYU Crypto Reading Group
   - Purdue Crypto Reading Group
+  - Charles River Crypto Day
 
 - PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation
   - Usenix 2024
