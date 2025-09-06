@@ -7,16 +7,33 @@
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
-    {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}">
-    {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
-    {% endif %}
+    {% comment %}
+      Fallback image if JS is disabled:
+      - Prefer author.avatar if defined
+      - Otherwise use the first item in site.photos
+    {% endcomment %}
+    {% assign fallback_photo = site.author.avatar | default: site.photos | first %}
+    <img id="profile-photo"
+        class="author__avatar"
+        src="{{ fallback_photo }}"
+        alt="{{ author.name }}"
+        loading="lazy" />
+
+    <script>
+      (function() {
+        const photos = {{ site.photos | jsonify }};
+        if (!Array.isArray(photos) || photos.length === 0) return;
+
+        const chosen = photos[Math.floor(Math.random() * photos.length)];
+        const img = document.getElementById('profile-photo');
+        if (img && chosen) img.src = chosen;
+      })();
+    </script>
   </div>
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio">{{ author.bio | markdownify }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">

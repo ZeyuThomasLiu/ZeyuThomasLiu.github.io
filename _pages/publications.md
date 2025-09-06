@@ -6,11 +6,15 @@ author_profile: true
 ---
 
 
-The publications below are in alphabetical order, unless marked by *, which indicates main contributors in alphabetical order.
+The publications below are in alphabetical order (either among all authors or among all student authors), unless marked by *, which indicates main contributor.
 
 ### Published
 
-- <u>Zeyu Liu</u>\*, Yunhao Wang\*, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
+- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025 (To appear).
+
+- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Lattice-based Multi-message Multi-recipient KEM/PKE with Malicious Security." Asiacrypt 2025 (To appear).
+
+- <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
 
 - Xinxuan Zhang\*, Ruida Wang, <u> Zeyu Liu </u>, Binwu Xiang, Yi Deng, Ben Fisch, Xianhui Lu. "Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data." CCS 2025 (To appear).
 
@@ -50,7 +54,7 @@ The publications below are in alphabetical order, unless marked by *, which indi
 
 ### In submission (available on eprint)
 
-- Arthur Lazzaretti\*, <u>Zeyu Liu</u>\*, Ben Fisch, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR."
+- Varun Madathil\*, Arthur Lazzaretti, <u>Zeyu Liu</u>, Charalampos Papamanthou. "TACITA: Threshold Aggregation without Client Interaction."
 
 
 ### Non-cryptography

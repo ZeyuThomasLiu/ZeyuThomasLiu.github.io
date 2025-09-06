@@ -8,9 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-- I am visiting [CMU](https://www.cmu.edu/) in Summer 2025, kindly hosted by Prof. [Aayush Jain](https://sites.google.com/view/aayushjain/home).
 
 - I am a PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](http://yacl.cs.yale.edu/), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/site/benafisch).
+
+- I had an amazing experience visiting [CMU](https://www.cmu.edu/) during Summer 2025, kindly hosted by Prof. [Aayush Jain](https://sites.google.com/view/aayushjain/home).
 
 - Before coming to Yale, I obtained my Master's degree at [Columbia University](https://www.columbia.edu/), where I was fortunate to be jointly advised by Prof. [Tal Malkin](http://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://cs-people.bu.edu/tromer/). During my Master's study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com/), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io/). Before that, I obtained by Bachelor's degree in CS and Math at [UCLA](https://www.ucla.edu/).
 
@@ -20,10 +21,15 @@ redirect_from:
 
 ## Selected Publications (Reverse Chronological Order)
 Authors are listed in alphabetical order (either among all authors or among all student authors) for all the publications below.
+
 For the full list, please see [my google scholar](https://scholar.google.com/citations?user=hb3VtFUAAAAJ) for the most up-to-date version or [here](https://zeyuthomasliu.github.io/publications/) for a manually kept version.
 
 
 ### Published
+
+- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025 (To appear).
+
+- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Lattice-based Multi-message Multi-recipient KEM/PKE with Malicious Security." Asiacrypt 2025 (To appear).
 
 - <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
 

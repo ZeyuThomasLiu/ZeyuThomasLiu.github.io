@@ -77,12 +77,16 @@ analytics:
   google:
     tracking_id          :
 
+photos:
+  - /images/me1.png
+  - /images/me2.png
+  - /images/me3.png
 
 # Site Author
 author:
   name             : "Zeyu (Thomas) Liu"
   avatar           : "photo.png" 
-  bio              : "PhD student at Yale University"
+  bio              : "PhD student at Yale University. Photos by [Dr. Tiantian Gong](https://www.ttiangong.com/)."
   location         : "New Haven"
   employer         :
   pubmed           : 
