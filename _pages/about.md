@@ -27,7 +27,7 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
 
 ### Published
 
-- Haofei Liang, <u>Zeyu Liu</u>, Eran Tromer, Xiang Xie, Yu Yu. "InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability." USENIX Security (To appear).
+- Haofei Liang, <u>Zeyu Liu</u>, Eran Tromer, Xiang Xie, Yu Yu. "InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability." USENIX Security 2026 (To appear).
 
 - Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025.
 
