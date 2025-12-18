@@ -27,11 +27,13 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
 
 ### Published
 
-- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025 (To appear).
+- Haofei Liang, <u>Zeyu Liu</u>, Eran Tromer, Xiang Xie, Yu Yu. "InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability." USENIX Security (To appear).
 
-- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Lattice-based Multi-message Multi-recipient KEM/PKE with Malicious Security." Asiacrypt 2025 (To appear).
+- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025.
 
-- <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
+- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Lattice-based Multi-message Multi-recipient KEM/PKE with Malicious Security." Asiacrypt 2025.
+
+- <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025.
 
 - Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling." CSF 2025.
 
@@ -47,7 +49,7 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
 
 - Ben Fisch, Arthur Lazzaretti, <u>Zeyu Liu</u>, Charalampos Papamanthou. "ThorPIR: Single Server PIR via Homomorphic Thorp Shuffles." CCS 2024.
 
-- <u>Zeyu Liu</u>, Eran Tromer, Yunhao Wang. "PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation." Usenix Security 2024.
+- <u>Zeyu Liu</u>, Eran Tromer, Yunhao Wang. "PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation." USENIX Security 2024.
 
 - <u>Zeyu Liu</u>, Eran Tromer, Yunhao Wang. "Group Oblivious Message Retrieval." S&P 2024.
 
@@ -69,11 +71,14 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
   - Brown University Cryptography Reading Group
   - S&P 2024
   - FHE.org
+  - SJTU Cryptography Reading Group
 
 - Snake-eye Resistant PKE from LWE for Oblivious Message Retrieval and Robust Encryption
   - NYU Crypto Reading Group
   - Purdue Crypto Reading Group
   - Charles River Crypto Day
+  - CMU Cylab Crypto Seminar
+  - NTNU Cryptography Reading Group
 
 - PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation
   - Usenix 2024
@@ -89,6 +94,7 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
   - Asiacrypt 2023
 
 - Large-precision homomorphic sign evaluation using FHEW/TFHE bootstrapping
+  - Duality Research Seminar
   - Asiacrypt 2022
 
 - ThorPIR: Single Server PIR via Homomorphic Thorp Shuffles
@@ -102,7 +108,10 @@ For the full list, please see [my google scholar](https://scholar.google.com/cit
   - CSF 2025
 
 ## Academic Services
-Reviewer at Crypto {2025, 2024, 2023, 2022}; S&P {2026, 2025}; Asiacrypt {2025, 2024}; TCC {2025, 2023}; Eurocrypt 2025; CCS 2025; Financial Crypto 2025; PKC 2024; SCN 2022
+
+Program committee at PKC 2026
+
+Reviewer at S&P {2026, 2025, 2024}; Eurocrypt {2026, 2025}; USENIX Security 2026; Crypto {2025, 2024, 2023, 2022};  Asiacrypt {2025, 2024}; TCC {2025, 2023}; CCS 2025; Financial Crypto 2025; PKC 2024; SCN 2022
 
 ## Teaching
 Received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2017/top-students-in-computer-science-receive-awards/) in 2022 for the course Introduction to Cryptography at Columbia University.

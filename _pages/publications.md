@@ -6,17 +6,19 @@ author_profile: true
 ---
 
 
-The publications below are in alphabetical order (either among all authors or among all student authors), unless marked by *, which indicates main contributor.
+The publications below are in alphabetical order (either among all authors or among all student authors), unless marked by *, which indicates the main contributor.
 
 ### Published
 
-- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025 (To appear).
+- Haofei Liang, <u> Zeyu Liu <u>, Eran Tromer, Xiang Xie, Yu Yu. "InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability." USENIX Security (To appear).
 
-- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Lattice-based Multi-message Multi-recipient KEM/PKE with Malicious Security." Asiacrypt 2025 (To appear).
+- Arthur Lazzaretti, <u>Zeyu Liu</u>, Ben Fisch, Peihan Miao, Charalampos Papamanthou. "Multi-Server Doubly Efficient PIR in the Classical Model and Beyond." TCC 2025.
 
-- <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025 (To appear).
+- <u>Zeyu Liu</u>, Katerina Sotiraki, Eran Tromer, Yunhao Wang. "Lattice-based Multi-message Multi-recipient KEM/PKE with Malicious Security." Asiacrypt 2025.
 
-- Xinxuan Zhang\*, Ruida Wang, <u> Zeyu Liu </u>, Binwu Xiang, Yi Deng, Ben Fisch, Xianhui Lu. "Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data." CCS 2025 (To appear).
+- <u>Zeyu Liu</u>, Yunhao Wang, Ben Fisch. "IND-CPA-D of Exact FHE Bootstrapping: A New Attack, A General Fix, and A Stronger Model." CCS 2025.
+
+- Xinxuan Zhang\*, Ruida Wang, <u> Zeyu Liu </u>, Binwu Xiang, Yi Deng, Ben Fisch, Xianhui Lu. "Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data." CCS 2025.
 
 - Sashidhar Jakkamsetti, <u>Zeyu Liu</u>, Varun Madathil. "Scalable Private Signaling." CSF 2025.
 
