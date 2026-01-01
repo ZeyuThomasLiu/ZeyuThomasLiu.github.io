@@ -45,6 +45,7 @@ export interface Publication {
   summary?: string;
   researchArea: ResearchArea;
   description?: string;
+  order?: number;
 }
 
 export type PublicationType =

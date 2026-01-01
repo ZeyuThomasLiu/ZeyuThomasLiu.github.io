@@ -4,6 +4,7 @@ import { parseBibTeX } from '@/lib/bibtexParser';
 import Profile from '@/components/home/Profile';
 import About from '@/components/home/About';
 import SelectedPublications from '@/components/home/SelectedPublications';
+import SelectedTeaching from '@/components/home/SelectedTeaching';
 import News, { NewsItem } from '@/components/home/News';
 import PublicationsList from '@/components/publications/PublicationsList';
 import TextPage from '@/components/pages/TextPage';
@@ -17,6 +18,7 @@ interface SectionConfig {
   id: string;
   type: 'markdown' | 'publications' | 'list';
   title?: string;
+  description?: string;
   source?: string;
   filter?: string;
   limit?: number;
@@ -128,12 +130,12 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 py-8 bg-background min-h-screen">
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-[25fr_75fr] gap-20">
 
         {/* Left Column - Profile */}
-        <div className="lg:col-span-1">
+        <div className="">
           <Profile
             author={config.author}
             social={config.social}
@@ -143,17 +145,27 @@ export default function Home() {
         </div>
 
         {/* Right Column - Content */}
-        <div className="lg:col-span-2 space-y-8">
+        <div className="space-y-8">
           {pagesToShow.map((page) => (
             <section key={page.id} id={page.id} className="scroll-mt-24 space-y-8">
               {page.type === 'about' && page.sections.map((section: SectionConfig) => {
                 switch (section.type) {
                   case 'markdown':
-                    return (
+                    return section.id === 'selected_teaching' ? (
+                      <SelectedTeaching
+                        key={section.id}
+                        content={section.content || ''}
+                        title={section.title}
+                        enableOnePageMode={enableOnePageMode}
+                      />
+                    ) : (
                       <About
                         key={section.id}
                         content={section.content || ''}
                         title={section.title}
+                        listSpacingClassName={
+                          section.id === 'about' ? 'space-y-2.5' : 'space-y-0'
+                        }
                       />
                     );
                   case 'publications':
@@ -162,6 +174,7 @@ export default function Home() {
                         key={section.id}
                         publications={section.publications || []}
                         title={section.title}
+                        description={section.description}
                         enableOnePageMode={enableOnePageMode}
                       />
                     );

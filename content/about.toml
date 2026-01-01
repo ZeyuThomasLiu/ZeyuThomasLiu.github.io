@@ -3,9 +3,9 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+  "Secure Computation",
+  "Metadata Privacy",
+  "Lattice-based Cryptography",
 ]
 
 [[sections]]
@@ -18,12 +18,24 @@ title = "About"
 id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
+description = "All publications below list authors in alphabetical order (either among all authors or among student authors)."
 filter = "selected"
-limit = 5
+limit = 100000
 
 [[sections]]
-id = "news"
-type = "list"
-title = "News"
-source = "news.toml"
+id = "talks"
+type = "markdown"
+source = "talks.md"
+title = "Talks"
 
+[[sections]]
+id = "selected_teaching"
+type = "markdown"
+source = "teaching_experience.md"
+title = "Teaching Experience Summary"
+
+[[sections]]
+id = "academic_services"
+type = "markdown"
+source = "academic_services.md"
+title = "Academic Services"

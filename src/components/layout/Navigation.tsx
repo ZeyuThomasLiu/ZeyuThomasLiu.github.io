@@ -111,7 +111,7 @@ export default function Navigation({ items, siteTitle, enableOnePageMode }: Navi
 
                 {/* Desktop Navigation */}
                 <div className="hidden lg:block">
-                  <div className="ml-10 flex items-center space-x-8">
+                  <div className="ml-10 flex items-center space-x-16">
                     <div className="flex items-baseline space-x-8">
                       {items.map((item) => {
                         const isActive = enableOnePageMode

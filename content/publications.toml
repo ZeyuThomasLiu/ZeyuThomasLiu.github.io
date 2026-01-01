@@ -1,4 +1,4 @@
 type = "publication"
 title = "Publications"
-description = "A collection of my research work."
+description = "Publications below are listed in alphabetical order (either among all authors or among student authors), unless marked with *, which denotes the main contributor."
 source = "publications.bib"

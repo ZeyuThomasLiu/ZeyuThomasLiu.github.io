@@ -1,5 +1,6 @@
-I am a PhD student at the School of Science, University of Example, advised by [Prof. Advisor One](https://example.com) and [Dr. Advisor Two](https://example.com).
-
-Prior to this, I obtained a BSc degree with First Class Honours in Natural Science from the University of Example.
-
-My current research focuses on investigating the mathematical principles of natural philosophy.
+- I am a PhD student at Yale University, [Yale Applied Cryptography Laboratory (YACL)](https://yacl.cs.yale.edu), and luckily being advised by Prof. [Ben Fisch](https://sites.google.com/view/benfisch). 
+- I also had an amazing experience visiting [CMU](https://www.cmu.edu) in Summer 2025, kindly hosted by Prof. [Aayush Jain](https://sites.google.com/view/aayushjain). 
+- Before coming to Yale, I obtained my Master’s degree at [Columbia University](https://www.columbia.edu), where I was fortunate to be jointly advised by Prof. [Tal Malkin](https://www.cs.columbia.edu/~tal/) and Prof. [Eran Tromer](https://cs-people.bu.edu/eran). 
+- During my Master’s study, I also worked part time as a researcher at [Duality Technologies Inc.](https://dualitytech.com), where I was fortunate to be supervised by Dr. [Yuriy Polyakov](https://ypolyakov.gitlab.io). 
+- Before that, I obtained my Bachelor’s degree in CS and Math at [UCLA](https://www.ucla.edu).
+- If you are interested, please also check out my bunny, [Baoliu](/baoliu).

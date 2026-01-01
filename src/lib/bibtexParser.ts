@@ -59,6 +59,12 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
     // Parse selected field (convert string to boolean)
     const selected = tags.selected === 'true' || tags.selected === 'yes';
 
+    // Parse order field (string -> number)
+    const order =
+      tags.order !== undefined && tags.order !== ''
+        ? Number(tags.order)
+        : undefined;
+
     // Parse preview field (remove braces if present)
     const preview = tags.preview?.replace(/[{}]/g, '');
 
@@ -88,9 +94,10 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
       description: cleanBibTeXString(tags.description || tags.note),
       selected,
       preview,
+      order,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'order']),
     };
 
     // Clean up undefined fields
@@ -102,19 +109,36 @@ export function parseBibTeX(bibtexContent: string): Publication[] {
 
     return publication;
   }).sort((a: Publication, b: Publication) => {
-    // Sort by year (descending), then by month if available
-    if (b.year !== a.year) return b.year - a.year;
+    const ao = a.order;
+    const bo = b.order;
 
-    // For month comparison, treat missing months as January (1) to ensure they appear last within the year
-    const monthA = typeof a.month === 'string' ?
-      (monthMapping[a.month.toLowerCase()] || parseInt(a.month) || 1) :
-      (a.month || 1);
-    const monthB = typeof b.month === 'string' ?
-      (monthMapping[b.month.toLowerCase()] || parseInt(b.month) || 1) :
-      (b.month || 1);
+    const aHas = Number.isFinite(ao);
+    const bHas = Number.isFinite(bo);
 
-    // Sort by month descending (December to January)
-    return monthB - monthA;
+    // 1) order first (smaller order comes earlier: 1,2,3,...)
+    if (aHas && bHas) return (bo as number) - (ao as number);
+    if (aHas && !bHas) return -1;
+    if (!aHas && bHas) return 1;
+
+    // 2) otherwise: year desc
+    const ay = a.year ?? -Infinity;
+    const by = b.year ?? -Infinity;
+    if (ay !== by) return by - ay;
+
+    // 3) month desc (optional tiebreak)
+    const monthA =
+      typeof a.month === 'string'
+        ? (monthMapping[a.month.toLowerCase()] || Number(a.month) || 1)
+        : (a.month ? Number(a.month) : 1);
+    const monthB =
+      typeof b.month === 'string'
+        ? (monthMapping[b.month.toLowerCase()] || Number(b.month) || 1)
+        : (b.month ? Number(b.month) : 1);
+
+    if (monthA !== monthB) return monthB - monthA;
+
+    // 4) stable-ish tiebreak
+    return a.title.localeCompare(b.title);
   });
 }
 

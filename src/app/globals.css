@@ -14,9 +14,13 @@
   --primary: #1e293b;
   --primary-light: #334155;
   --primary-dark: #0f172a;
-  --accent: #d4a562;
-  --accent-light: #e4b976;
-  --accent-dark: #b8914d;
+  /* Accent colors (shared constants so we can reference both themes) */
+  --accent-light-value: #6aa0f7; /* light theme accent */
+  --accent-dark-value: #e4b976;  /* dark theme accent */
+  --accent: var(--accent-light-value);
+  --accent-opposite: var(--accent-dark-value);
+  --accent-light: #3b82f6;
+  --accent-dark: #6a91fd;
   
   /* Neutral colors */
   --neutral-50: #f8fafc;
@@ -52,6 +56,7 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
+  --color-accent-opposite: var(--accent-opposite);
   
   /* Neutral palette */
   --color-neutral-50: var(--neutral-50);
@@ -137,9 +142,11 @@
   --primary: #f8fafc;
   --primary-light: #e2e8f0;
   --primary-dark: #cbd5e1;
-  --accent: #e4b976;
+  --accent: var(--accent-dark-value);
+  --accent-opposite: var(--accent-light-value);
   --accent-light: #f0c674;
   --accent-dark: #d4a562;
+
   
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);
@@ -238,4 +245,24 @@ body {
   background-color: #1e293b;
   /* Soften card borders in dark mode only */
   border-color: rgba(148, 163, 184, 0.24);
+}
+
+/* Top-level bullets: solid */
+.markdown ul {
+  list-style-type: disc;
+}
+
+/* Second-level bullets: hollow circle */
+.markdown ul ul {
+  list-style-type: circle;
+}
+
+/* Third-level bullets (optional): square */
+.markdown ul ul ul {
+  list-style-type: square;
+}
+
+/* Kill react-markdown's <li><p> spacing issue */
+.markdown li > p {
+  margin: 0;
 }

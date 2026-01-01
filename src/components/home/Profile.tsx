@@ -43,6 +43,13 @@ export default function Profile({ author, social, features, researchInterests }:
     const [isEmailPinned, setIsEmailPinned] = useState(false);
     const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
 
+    const avatarChoices = ['/bio1.png', '/bio2.png', '/bio3.png'];
+    const [avatarSrc, setAvatarSrc] = useState(avatarChoices[0]);
+    useEffect(() => {
+    const choice = avatarChoices[Math.floor(Math.random() * avatarChoices.length)];
+    setAvatarSrc(choice);
+    }, []);
+
     // Check local storage for user's like status
     useEffect(() => {
         if (!features.enable_likes) return;
@@ -109,16 +116,33 @@ export default function Profile({ author, social, features, researchInterests }:
             transition={{ duration: 0.6 }}
             className="sticky top-8"
         >
-            {/* Profile Image */}
-            <div className="w-64 h-64 mx-auto mb-6 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
+                        {/* Profile Image */}
+            <div className="w-65 h-65 mx-auto mb-3 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
                 <Image
-                    src={author.avatar}
+                    src={avatarSrc}
                     alt={author.name}
                     width={256}
-                    height={256}
-                    className="w-full h-full object-cover object-[32%_center]"
+                    height={512}
+                    className="w-full h-full object-contain bg-neutral-100 dark:bg-neutral-800"
                     priority
                 />
+            </div>
+
+            {/* Photo credit */}
+            <div className="text-center mb-4">
+                <p className="text-xs text-neutral-500 dark:text-neutral-500">
+                    Photos by Dr.{' '}
+                    <a
+                        href="https://www.ttiangong.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent font-sm transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm" 
+                        //  underline underline-offset-2 hover:opacity-80
+                    >
+                        Tiantian Gong
+                    </a>
+                    .
+                </p>
             </div>
 
             {/* Name and Title */}
@@ -126,7 +150,7 @@ export default function Profile({ author, social, features, researchInterests }:
                 <h1 className="text-3xl font-serif font-bold text-primary mb-2">
                     {author.name}
                 </h1>
-                <p className="text-lg text-accent font-medium mb-1">
+                <p className="text-lg font-medium mb-1">
                     {author.title}
                 </p>
                 <p className="text-neutral-600 mb-2">
@@ -268,7 +292,7 @@ export default function Profile({ author, social, features, researchInterests }:
                                                     )}
                                                 </div>
                                                 <p className="break-words">{social.email?.replace('@', ' (at) ')}</p>
-                                                <div className="mt-2">
+                                                {/* <div className="mt-2">
                                                     <a
                                                         href={link.href}
                                                         className="inline-flex items-center justify-center space-x-2 bg-accent hover:bg-accent-dark text-white px-3 py-1 rounded-md text-xs font-medium transition-colors duration-200 w-full sm:w-auto"
@@ -277,7 +301,7 @@ export default function Profile({ author, social, features, researchInterests }:
                                                         <span className="sm:hidden">Send</span>
                                                         <span className="hidden sm:inline">Send Email</span>
                                                     </a>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-neutral-800"></div>
                                         </motion.div>
@@ -303,15 +327,20 @@ export default function Profile({ author, social, features, researchInterests }:
 
             {/* Research Interests */}
             {researchInterests && researchInterests.length > 0 && (
-                <div className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-4 mb-6 hover:shadow-lg transition-all duration-200 hover:scale-[1.02]">
-                    <h3 className="font-semibold text-primary mb-3">Research Interests</h3>
-                    <div className="space-y-2 text-sm text-neutral-700 dark:text-neutral-500">
-                        {researchInterests.map((interest, index) => (
-                            <div key={index}>{interest}</div>
-                        ))}
+                <div className="flex justify-center">
+                    <div className="inline-block bg-neutral-100 dark:bg-neutral-800 rounded-lg px-8 py-2 mb-6 hover:shadow-lg transition-all duration-200 hover:scale-[1.02]">
+                        <h3 className="font-semibold text-primary mb-3 text-center">
+                            Research Interests
+                        </h3>
+                        <div className="space-y-2 text-sm text-neutral-700 dark:text-neutral-500 text-center mb-1.5">
+                            {researchInterests.map((interest, index) => (
+                                <div key={index}>{interest}</div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             )}
+
 
             {/* Like Button */}
             {features.enable_likes && (

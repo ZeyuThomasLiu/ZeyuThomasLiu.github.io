@@ -29,6 +29,7 @@ export default {
           light: 'var(--accent-light)',
           dark: 'var(--accent-dark)',
         },
+        'accent-opposite': 'var(--accent-opposite)',
         neutral: {
           50: 'var(--neutral-50)',
           100: 'var(--neutral-100)',

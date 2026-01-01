@@ -15,25 +15,33 @@ export default function TextPage({ config, content, embedded = false }: TextPage
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className={embedded ? "" : "max-w-3xl mx-auto"}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className={embedded ? "" : "mx-full"}
         >
-            <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
+            <h1 className={`${embedded ? "text-2xl" : "text-2xl"} font-serif font-bold text-primary mb-2`}>{config.title}</h1>
             {config.description && (
-                <p className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 mb-8 max-w-2xl`}>
+                <p className={`${embedded ? "text-base" : "text-base"} text-neutral-600 dark:text-neutral-500 mb-8 max-w-2xl`}>
                     {config.description}
                 </p>
             )}
-            <div className="text-neutral-700 dark:text-neutral-600 leading-relaxed">
+            <div className="markdown text-neutral-700 dark:text-neutral-600 leading-relaxed">
                 <ReactMarkdown
                     components={{
                         h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-primary mt-8 mb-4">{children}</h1>,
-                        h2: ({ children }) => <h2 className="text-2xl font-serif font-bold text-primary mt-8 mb-4 border-b border-neutral-200 dark:border-neutral-800 pb-2">{children}</h2>,
-                        h3: ({ children }) => <h3 className="text-xl font-semibold text-primary mt-6 mb-3">{children}</h3>,
+                        h2: ({ children }) => <h2 className="text-xl font-serif font-bold text-primary mt-5 mb-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">{children}</h2>,
+                        h3: ({ children }) => <h3 className="text-[13.5pt] font-semibold text-primary mt-2 mb-1">{children}</h3>,
                         p: ({ children }) => <p className="mb-4 last:mb-0">{children}</p>,
-                        ul: ({ children }) => <ul className="list-disc list-inside mb-4 space-y-1 ml-4">{children}</ul>,
-                        ol: ({ children }) => <ol className="list-decimal list-inside mb-4 space-y-1 ml-4">{children}</ol>,
-                        li: ({ children }) => <li className="mb-1">{children}</li>,
+                        ul: ({ children }) => (
+                        <ul className="list-disc list-outside pl-6 mb-1 space-y-1">
+                            {children}
+                        </ul>
+                        ),
+                        ol: ({ children }) => (
+                        <ol className="list-decimal list-outside pl-6 mb-1 space-y-1">
+                            {children}
+                        </ol>
+                        ),
+                        li: ({ children }) => <li className="leading-relaxed mb-0">{children}</li>,
                         a: ({ ...props }) => (
                             <a
                                 {...props}

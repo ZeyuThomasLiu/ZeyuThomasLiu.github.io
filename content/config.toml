@@ -1,42 +1,30 @@
 [site]
-title = "Jiale Liu"
-description = "PhD student at the University of Example."
+title = "Zeyu (Thomas) Liu"
+description = "PhD student at the Yale University."
 favicon = "/favicon.svg"
-last_updated = "November 18, 2025"
 
 [author]
-name = "Jiale Liu"
+name = "Zeyu Liu"
 title = "PhD Student"
-institution = "University of Example"
+institution = "Yale University"
 avatar = "/bio.jpg"
 
 [social]
 # Contact information (leave blank or delete to hide)
 
-email = "john.doe@example.com"
-location = "City, Country"
-location_url = "https://maps.google.com"
+email = "zeyu.liu@yale.edu"
+location = "New Haven, USA"
 location_details = [
-  "Room 123, Science Building,",
-  "University Avenue, City, Country"
+  "New Haven, USA"
 ]
-google_scholar = "https://scholar.google.com"
-orcid = "https://orcid.org"
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+google_scholar = "https://scholar.google.com/citations?user=hb3VtFUAAAAJ"
 
 [features]
 # Show a like button on the about page
-enable_likes = true
+enable_likes = false
 
 # Display all subpages on a single page
 enable_one_page_mode = false
-
-[[navigation]]
-title = "About"
-type = "page"
-target = "about"
-href = "/"
 
 [[navigation]]
 title = "Publications"
@@ -51,19 +39,7 @@ target = "teaching"
 href = "/teaching"
 
 [[navigation]]
-title = "Awards"
+title = "Baoliu"
 type = "page"
-target = "awards"
-href = "/awards"
-
-[[navigation]]
-title = "Services"
-type = "page"
-target = "services"
-href = "/services"
-
-[[navigation]]
-title = "CV"
-type = "page"
-target = "cv"
-href = "/cv"
+target = "baoliu"
+href = "/baoliu"
