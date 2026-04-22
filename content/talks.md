@@ -15,6 +15,10 @@
 - CMU Cylab Crypto Seminar
 - NTNU Cryptography Reading Group
 
+## InstantOMR: Oblivious Message Retrieval with Low Latency and Optimal Parallelizability
+
+- Northwestern University Crypto Reading Group
+
 ## PerfOMR: Oblivious Message Retrieval with Reduced Communication and Computation
 
 - USENIX Security 2024
@@ -35,6 +39,10 @@
 
 - Duality Research Seminar
 - Asiacrypt 2022
+
+## Verifiable FHE (Laminate)
+
+- NIST Workshop on Multi-Party Threshold Schemes 2026
 
 ## ThorPIR: Single Server PIR via Homomorphic Thorp Shuffles
 

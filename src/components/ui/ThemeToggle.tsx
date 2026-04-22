@@ -50,10 +50,14 @@ export function ThemeToggle() {
         type="button"
         onMouseDown={(e) => e.preventDefault()}
         onClick={() => {
-          const order: Theme[] = ['system', 'light', 'dark'];
-          const index = order.indexOf(theme);
-          const next = order[(index + 1) % order.length];
-          setTheme(next);
+          if (theme === 'system') {
+            // Check what the OS is currently using, then set it to the opposite
+            const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            setTheme(isSystemDark ? 'light' : 'dark');
+          } else {
+            // Standard toggle if they are already out of system mode
+            setTheme(theme === 'light' ? 'dark' : 'light');
+          }
         }}
         className={cn(
           'flex items-center justify-center w-10 h-10 rounded-lg',

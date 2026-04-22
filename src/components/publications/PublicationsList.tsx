@@ -117,7 +117,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 {author.name}
                                             </span>
                                             {author.isCorresponding && (
-                                                <sup className={`ml-0 ${author.isHighlighted ? 'text-accent-opposite' : 'text-neutral-600 dark:text-neutral-400'}`}>†</sup>
+                                                <sup className={`ml-0 ${author.isHighlighted ? 'text-accent-opposite' : 'text-neutral-600 dark:text-neutral-400'}`}>*</sup>
                                             )}
                                             {idx < pub.authors.length - 1 && ', '}
                                         </span>
@@ -221,7 +221,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         >
                                             <div className="relative bg-neutral-50 dark:bg-neutral-800 rounded-lg p-4 border border-neutral-200 dark:border-neutral-700">
                                                 <pre className="text-xs text-neutral-600 dark:text-neutral-500 overflow-x-auto whitespace-pre-wrap font-mono">
-                                                    {pub.bibtex}
+                                                    {pub.bibtex?.replace(/\*/g, '')}
                                                 </pre>
                                                 <button
                                                     onClick={() => {
@@ -265,7 +265,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                     {config.title}
                 </h1>
                 {config.description && (
-                    <p className={`${embedded ? "text-sm" : "text-sm"} text-neutral-600 dark:text-neutral-500 max-w-none`}>
+                    <p className={`${embedded ? "text-sm" : "text-sm"} text-neutral-600 dark:text-neutral-500 max-w-none  whitespace-pre-wrap`}>
                         {config.description}
                     </p>
                 )}
@@ -391,7 +391,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                         {/* Published section */}
                         <SectionHeader title="Published" />
                         {publishedPublications.map((pub, index) => (
-                            <PublicationCard key={pub.id} pub={pub} index={index} />
+                            PublicationCard({ pub, index })
                         ))}
 
                         {/* Preprints section (only if any) */}
@@ -399,7 +399,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                             <>
                                 <SectionHeader title="Preprints" />
                                 {preprintPublications.map((pub, index) => (
-                                    <PublicationCard key={pub.id} pub={pub} index={index} />
+                                    PublicationCard({ pub, index })
                                 ))}
                             </>
                         )}

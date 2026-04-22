@@ -18,7 +18,7 @@ title = "About"
 id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
-description = "All publications below list authors in alphabetical order (either among all authors or among student authors)."
+description = "All publications below list authors in alphabetical order (either among all authors or among student authors). \nPapers without a URL are currently in preparation for ePrint and will be available soon."
 filter = "selected"
 limit = 100000
 

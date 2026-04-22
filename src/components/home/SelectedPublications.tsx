@@ -50,7 +50,10 @@ export default function SelectedPublications({
       </div>
 
       {description ? (
-        <p className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed max-w-none, mb-2.5">
+        <p
+          className="text-sm text-neutral-600 dark:text-neutral-500 leading-relaxed max-w-none, mb-2.5  whitespace-pre-wrap"
+          // style={{ whiteSpace: "pre-line" }}
+        >
           {description}
         </p>
       ) : null}

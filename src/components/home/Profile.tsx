@@ -43,7 +43,7 @@ export default function Profile({ author, social, features, researchInterests }:
     const [isEmailPinned, setIsEmailPinned] = useState(false);
     const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
 
-    const avatarChoices = ['/bio1.png', '/bio2.png', '/bio3.png'];
+    const avatarChoices = ['/bio1.png', '/bio2.png'];
     const [avatarSrc, setAvatarSrc] = useState(avatarChoices[0]);
     useEffect(() => {
     const choice = avatarChoices[Math.floor(Math.random() * avatarChoices.length)];
