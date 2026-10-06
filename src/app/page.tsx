@@ -166,6 +166,7 @@ export default function Home() {
                         listSpacingClassName={
                           section.id === 'about' ? 'space-y-2.5' : 'space-y-0'
                         }
+                        listTextClassName={section.id === 'about' ? 'text-[14px]' : undefined}
                       />
                     );
                   case 'publications':

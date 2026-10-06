@@ -1,4 +1,25 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+import { getConfig } from '@/lib/config';
+
+export async function generateMetadata(): Promise<Metadata> {
+  const config = getConfig();
+  const description = `Photos of Baoliu, ${config.author.name}'s bunny.`;
+
+  return {
+    title: 'Baoliu',
+    description,
+    alternates: { canonical: '/baoliu/' },
+    openGraph: {
+      type: 'website',
+      locale: 'en_US',
+      title: `Baoliu | ${config.site.title}`,
+      description,
+      url: '/baoliu/',
+      siteName: `${config.author.name}'s Academic Website`,
+    },
+  };
+}
 
 export default function BaoliuPage() {
   // Put your 15 images in /public/baoliu/ with these exact filenames.
@@ -21,7 +42,7 @@ export default function BaoliuPage() {
   ];
 
   return (
-    <main className="max-w-[68rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div className="max-w-[68rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <h1 className="text-3xl font-serif font-bold text-primary mb-3">Baoliu</h1>
       <div className="text-medium text-neutral-600 dark:text-neutral space-y-1 mb-5">
         <p>
@@ -53,6 +74,6 @@ export default function BaoliuPage() {
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

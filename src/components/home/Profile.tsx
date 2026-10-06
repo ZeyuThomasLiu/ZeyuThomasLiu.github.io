@@ -43,13 +43,6 @@ export default function Profile({ author, social, features, researchInterests }:
     const [isEmailPinned, setIsEmailPinned] = useState(false);
     const [lastClickedTooltip, setLastClickedTooltip] = useState<'email' | 'address' | null>(null);
 
-    const avatarChoices = ['/bio1.png', '/bio2.png'];
-    const [avatarSrc, setAvatarSrc] = useState(avatarChoices[0]);
-    useEffect(() => {
-    const choice = avatarChoices[Math.floor(Math.random() * avatarChoices.length)];
-    setAvatarSrc(choice);
-    }, []);
-
     // Check local storage for user's like status
     useEffect(() => {
         if (!features.enable_likes) return;
@@ -114,15 +107,15 @@ export default function Profile({ author, social, features, researchInterests }:
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="sticky top-8"
+            className="sticky top-20 lg:top-24"
         >
                         {/* Profile Image */}
             <div className="w-65 h-65 mx-auto mb-3 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105">
                 <Image
-                    src={avatarSrc}
+                    src={author.avatar}
                     alt={author.name}
-                    width={256}
-                    height={512}
+                    width={1304}
+                    height={1280}
                     className="w-full h-full object-contain bg-neutral-100 dark:bg-neutral-800"
                     priority
                 />
@@ -131,12 +124,12 @@ export default function Profile({ author, social, features, researchInterests }:
             {/* Photo credit */}
             <div className="text-center mb-4">
                 <p className="text-xs text-neutral-500 dark:text-neutral-500">
-                    Photos by Dr.{' '}
+                    Photo by Dr.{' '}
                     <a
                         href="https://www.ttiangong.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-accent font-sm transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm" 
+                        className="text-link-text hover:text-link-text-hover font-sm transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
                         //  underline underline-offset-2 hover:opacity-80
                     >
                         Tiantian Gong
@@ -181,6 +174,8 @@ export default function Profile({ author, social, features, researchInterests }:
                                         : 'text-neutral-600 dark:text-neutral-400 hover:text-accent'
                                         }`}
                                     aria-label={link.name}
+                                    aria-expanded={showAddress || isAddressPinned}
+                                    aria-controls="profile-address-details"
                                 >
                                     {isAddressPinned ? (
                                         <MapPinSolidIcon className="h-5 w-5" />
@@ -193,6 +188,9 @@ export default function Profile({ author, social, features, researchInterests }:
                                 <AnimatePresence>
                                     {(showAddress || isAddressPinned) && (
                                         <motion.div
+                                            id="profile-address-details"
+                                            role="region"
+                                            aria-label="Work address"
                                             initial={{ opacity: 0, y: 10, scale: 0.8 }}
                                             animate={{ opacity: 1, y: -10, scale: 1 }}
                                             exit={{ opacity: 0, y: -20, scale: 0.8 }}
@@ -258,6 +256,8 @@ export default function Profile({ author, social, features, researchInterests }:
                                         : 'text-neutral-600 dark:text-neutral-400 hover:text-accent'
                                         }`}
                                     aria-label={link.name}
+                                    aria-expanded={showEmail || isEmailPinned}
+                                    aria-controls="profile-email-details"
                                 >
                                     {isEmailPinned ? (
                                         <EnvelopeSolidIcon className="h-5 w-5" />
@@ -270,6 +270,9 @@ export default function Profile({ author, social, features, researchInterests }:
                                 <AnimatePresence>
                                     {(showEmail || isEmailPinned) && (
                                         <motion.div
+                                            id="profile-email-details"
+                                            role="region"
+                                            aria-label="Email address"
                                             initial={{ opacity: 0, y: 10, scale: 0.8 }}
                                             animate={{ opacity: 1, y: -10, scale: 1 }}
                                             exit={{ opacity: 0, y: -20, scale: 0.8 }}

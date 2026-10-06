@@ -22,6 +22,15 @@
   --accent-light: #3b82f6;
   --accent-dark: #6a91fd;
   
+  /* Text colors for the approved contrast trial; surfaces retain their palette. */
+  --link-text: #3f85f5;
+  --link-text-hover: #0d62ec;
+  --author-highlight: #e4b976;
+  --publication-index: #627693;
+  --publication-authors: var(--neutral-600);
+  --publication-control: var(--neutral-700);
+  --publication-control-hover: #0f172a;
+
   /* Neutral colors */
   --neutral-50: #f8fafc;
   --neutral-100: #f1f5f9;
@@ -58,6 +67,14 @@
   --color-accent-dark: var(--accent-dark);
   --color-accent-opposite: var(--accent-opposite);
   
+  --color-link-text: var(--link-text);
+  --color-link-text-hover: var(--link-text-hover);
+  --color-author-highlight: var(--author-highlight);
+  --color-publication-index: var(--publication-index);
+  --color-publication-authors: var(--publication-authors);
+  --color-publication-control: var(--publication-control);
+  --color-publication-control-hover: var(--publication-control-hover);
+
   /* Neutral palette */
   --color-neutral-50: var(--neutral-50);
   --color-neutral-100: var(--neutral-100);
@@ -148,6 +165,13 @@
   --accent-dark: #d4a562;
 
   
+  --link-text: var(--accent);
+  --link-text-hover: var(--accent);
+  --author-highlight: var(--accent-opposite);
+  --publication-index: #72839a;
+  --publication-authors: #72839a;
+  --publication-control: #8192aa;
+
   /* Dark mode glass effect */
   --glass-bg: rgba(15, 23, 42, 0.8);
   --glass-border: rgba(255, 255, 255, 0.1);
@@ -252,9 +276,15 @@ body {
   list-style-type: disc;
 }
 
-/* Second-level bullets: hollow circle */
-.markdown ul ul {
+/* Teaching details and mentoring details share hollow-circle bullets. */
+.markdown ul ul,
+.markdown #research-mentoring ~ ul {
   list-style-type: circle;
+}
+
+/* Match the extra list indentation used by teaching details. */
+.markdown #research-mentoring ~ ul {
+  margin-left: calc(var(--spacing) * 6);
 }
 
 /* Third-level bullets (optional): square */

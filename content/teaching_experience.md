@@ -1,3 +1,3 @@
-- Received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/2022/06/2022-student-award-recipients/) in 2022 for the course _Introduction to Cryptography_ at Columbia University.
-- Guest lectured in 3 cryptography courses at Yale and CMU.
-- Served as a teaching assistant 8 times across 5 distinct courses.
+- Received the [Andrew P. Kosoresow Memorial Award for Excellence in Teaching and Service](https://www.cs.columbia.edu/wp-content/uploads/2022/05/CS_Highlights2022_chrono_f.pdf#page=2) in 2022 for the course _Introduction to Cryptography_ at Columbia University.
+- Guest lectured in 3 cryptography courses at Yale and CMU. Served as a teaching assistant eight times across five courses at Yale and Columbia.
+- Mentored graduate and undergraduate research on private computation and communication. See [Teaching and Mentoring](/teaching/) for students and joint publications.

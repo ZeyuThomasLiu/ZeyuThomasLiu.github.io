@@ -1,2 +1,3 @@
-- Program committee at Asiacrypt 2026, PKC 2026.
-- Reviewer at Crypto {2026, 2025, 2024, 2023, 2022} S&P {2026, 2025, 2024}; Eurocrypt {2026, 2025}; FOCS 2026; USENIX Security 2026; Asiacrypt {2025, 2024}; TCC {2025, 2023}; CCS 2025; Financial Crypto 2025; PKC 2024; SCN 2022.
+- **Conference Program Committees:** ASIACRYPT 2026; PKC 2026.
+- **FHE Community Program Committees:** FHE.org 2027; WAHC 2026.
+- **Reviewer:** EUROCRYPT 2025–2027; CRYPTO 2022–2026; IEEE S&P 2024–2026; SODA 2027; FOCS 2026; USENIX Security 2026; ASIACRYPT 2024–2025; TCC 2023, 2025; ACM CCS 2025; Financial Cryptography 2025; TCHES 2025; PKC 2024; SCN 2022.

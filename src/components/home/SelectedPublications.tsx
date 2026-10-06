@@ -42,7 +42,7 @@ export default function SelectedPublications({
         {!enableOnePageMode && (
           <Link
             href="/publications"
-            className="text-sm text-accent hover:underline underline-offset-4"
+            className="text-sm text-link-text hover:underline underline-offset-4"
           >
             View All →
           </Link>
@@ -77,35 +77,35 @@ export default function SelectedPublications({
             <div className="flex gap-1.5">
               {/* Counter column */}
               <span
-                className="w-8 text-neutral-400 font-normal select-none text-center flex-shrink-0"
+                className="w-8 text-publication-index font-normal select-none text-center flex-shrink-0"
                 aria-hidden="true"
               >
                 [{index + 1}]
               </span>
 
               {/* Content column */}
-              <div className="space-y-0.5">
+              <div className="min-w-0 flex-1 space-y-0.5">
                 <h3 className="text-[15px] font-semibold text-primary leading-snug">
                   {pub.title}
                 </h3>
 
-                <div className="text-[13.5px] text-neutral-600 dark:text-neutral-400">
+                <div className="text-[13.5px] text-publication-authors">
                   {pub.authors.map((author, idx) => (
                     <span key={idx}>
                       <span
-                        className={`${author.isHighlighted ? 'font-semibold text-accent-opposite' : ''} 
+                        className={`${author.isHighlighted ? 'font-semibold text-author-highlight' : ''}
                         ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}
                       >
                         {author.name}
                       </span>
-                      {author.isCorresponding && <sup>†</sup>}
+                      {author.isCorresponding && <sup>*</sup>}
                       {idx < pub.authors.length - 1 && ', '}
                     </span>
                   ))}
                 </div>
 
                 {/* Conference + year */}
-                <div className="flex items-center gap-2 text-[12.7px] font-medium text-neutral-800 dark:text-neutral-600">
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12.7px] font-medium text-neutral-800 dark:text-neutral-600">
                   <span>
                     {pub.journal || pub.conference} {` • ${pub.year}`}
                   </span>
@@ -115,7 +115,7 @@ export default function SelectedPublications({
                       href={pub.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-1 py-0.5 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                      className="inline-flex items-center px-1 py-0.5 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover transition-colors"
                     >
                       URL
                     </a>
@@ -152,35 +152,35 @@ export default function SelectedPublications({
                 <div className="flex gap-1.5">
                   {/* Counter column (restart for preprints) */}
                   <span
-                    className="w-8 text-neutral-400 font-normal select-none text-center flex-shrink-0"
+                    className="w-8 text-publication-index font-normal select-none text-center flex-shrink-0"
                     aria-hidden="true"
                   >
                     [{index + 1}]
                   </span>
 
                   {/* Content column */}
-                  <div className="space-y-0.5">
+                  <div className="min-w-0 flex-1 space-y-0.5">
                     <h3 className="text-[15px] font-semibold text-primary leading-snug">
                       {pub.title}
                     </h3>
 
-                    <div className="text-[13.5px] text-neutral-600 dark:text-neutral-400">
+                    <div className="text-[13.5px] text-publication-authors">
                       {pub.authors.map((author, idx) => (
                         <span key={idx}>
                           <span
-                            className={`${author.isHighlighted ? 'font-semibold text-accent-opposite' : ''} 
+                            className={`${author.isHighlighted ? 'font-semibold text-author-highlight' : ''}
                             ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}
                           >
                             {author.name}
                           </span>
-                          {author.isCorresponding && <sup>†</sup>}
+                          {author.isCorresponding && <sup>*</sup>}
                           {idx < pub.authors.length - 1 && ', '}
                         </span>
                       ))}
                     </div>
 
                     {/* Venue + Preprint • year */}
-                    <div className="flex items-center gap-2 text-[12.7px] font-medium text-neutral-800 dark:text-neutral-600">
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[12.7px] font-medium text-neutral-800 dark:text-neutral-600">
                       <span>
                         {(pub.journal || pub.conference)
                           ? `${pub.journal || pub.conference}  `
@@ -193,7 +193,7 @@ export default function SelectedPublications({
                           href={pub.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center px-1 py-0.5 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                          className="inline-flex items-center px-1 py-0.5 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover transition-colors"
                         >
                           URL
                         </a>

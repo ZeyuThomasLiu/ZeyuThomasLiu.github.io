@@ -28,7 +28,7 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                 <ReactMarkdown
                     components={{
                         h1: ({ children }) => <h1 className="text-3xl font-serif font-bold text-primary mt-8 mb-4">{children}</h1>,
-                        h2: ({ children }) => <h2 className="text-xl font-serif font-bold text-primary mt-5 mb-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">{children}</h2>,
+                        h2: ({ children }) => <h2 id={String(children) === 'Research Mentoring' ? 'research-mentoring' : undefined} className="text-xl font-serif font-bold text-primary mt-5 mb-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">{children}</h2>,
                         h3: ({ children }) => <h3 className="text-[13.5pt] font-semibold text-primary mt-2 mb-1">{children}</h3>,
                         p: ({ children }) => <p className="mb-4 last:mb-0">{children}</p>,
                         ul: ({ children }) => (
@@ -42,13 +42,16 @@ export default function TextPage({ config, content, embedded = false }: TextPage
                         </ol>
                         ),
                         li: ({ children }) => <li className="leading-relaxed mb-0">{children}</li>,
-                        a: ({ ...props }) => (
+                        a: ({ href, title, children }) => (
                             <a
-                                {...props}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-accent font-medium hover:underline transition-colors"
-                            />
+                                href={href}
+                                title={title}
+                                target={href?.startsWith('http') ? '_blank' : undefined}
+                                rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                className="text-link-text font-medium hover:underline transition-colors"
+                            >
+                                {children}
+                            </a>
                         ),
                         blockquote: ({ children }) => (
                             <blockquote className="border-l-4 border-accent/50 pl-4 italic my-4 text-neutral-600 dark:text-neutral-500">

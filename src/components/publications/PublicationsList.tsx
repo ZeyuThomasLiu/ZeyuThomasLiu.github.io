@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import {
@@ -14,6 +14,7 @@ import {
 import { Publication } from '@/types/publication';
 import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
+import { getPublicationReferences } from '@/lib/publicationReferences';
 
 interface PublicationsListProps {
     config: PublicationPageConfig;
@@ -28,6 +29,20 @@ export default function PublicationsList({ config, publications, embedded = fals
     const [showFilters, setShowFilters] = useState(false);
     const [expandedBibtexId, setExpandedBibtexId] = useState<string | null>(null);
     const [expandedAbstractId, setExpandedAbstractId] = useState<string | null>(null);
+
+    const publicationReferences = useMemo(() => getPublicationReferences(publications), [publications]);
+    const [activeFragment, setActiveFragment] = useState('');
+
+    useEffect(() => {
+        const syncFragment = () => setActiveFragment(window.location.hash.slice(1));
+        syncFragment();
+        window.addEventListener('hashchange', syncFragment);
+        window.addEventListener('popstate', syncFragment);
+        return () => {
+            window.removeEventListener('hashchange', syncFragment);
+            window.removeEventListener('popstate', syncFragment);
+        };
+    }, []);
 
     // Extract unique years and types for filters
     const years = useMemo(() => {
@@ -67,14 +82,26 @@ export default function PublicationsList({ config, publications, embedded = fals
         return filteredPublications.filter(pub => (typeof pub.order === 'number' && pub.order < 0));
     }, [filteredPublications]);
 
+    // Keep fragment destinations stationary while their entrance opacity animates.
     function PublicationCard({ pub, index }: { pub: Publication; index: number }) {
+        const reference = publicationReferences.get(pub.id);
+        const isFragmentTarget = activeFragment === reference?.anchor;
+        const abstractPanelId = `${reference?.anchor}-abstract`;
+        const bibtexPanelId = `${reference?.anchor}-bibtex`;
         return (
             <motion.div
                 key={pub.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                id={publicationReferences.get(pub.id)?.anchor}
+                data-publication-key={pub.id}
+                data-publication-number={reference?.number}
+                data-publication-highlighted={isFragmentTarget || undefined}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ duration: 0.4, delay: 0.03 * index }}
-                className="bg-white dark:bg-neutral-900 px-3 py-1 rounded-lg border border-neutral-200 dark:border-neutral-800"
+                className={cn(
+                    'scroll-mt-24 target:ring-2 target:ring-accent/50 bg-white dark:bg-neutral-900 px-3 py-1 rounded-lg border border-neutral-200 dark:border-neutral-800',
+                    isFragmentTarget && 'ring-2 ring-accent/50'
+                )}
             >
                 <div className="flex flex-col md:flex-row gap-3">
                     {pub.preview && (
@@ -95,10 +122,10 @@ export default function PublicationsList({ config, publications, embedded = fals
                             {/* fixed-width index column */}
                             <div className="w-6 flex-shrink-0">
                                 <div
-                                    className="inline-flex w-6 justify-center text-neutral-400 font-normal select-none"
+                                    className="inline-flex w-6 justify-center text-publication-index font-normal select-none"
                                     aria-hidden="true"
                                 >
-                                    [{index + 1}]
+                                    [{publicationReferences.get(pub.id)?.number}]
                                 </div>
                             </div>
 
@@ -108,16 +135,16 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     {pub.title}
                                 </h3>
 
-                                <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-[1px]">
+                                <p className="text-sm text-publication-authors mb-[1px]">
                                     {pub.authors.map((author, idx) => (
                                         <span key={idx}>
                                             <span
-                                                className={`${author.isHighlighted ? 'font-semibold text-accent-opposite' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}
+                                                className={`${author.isHighlighted ? 'font-semibold text-author-highlight' : ''} ${author.isCoAuthor ? `underline underline-offset-4 ${author.isHighlighted ? 'decoration-accent' : 'decoration-neutral-400'}` : ''}`}
                                             >
                                                 {author.name}
                                             </span>
                                             {author.isCorresponding && (
-                                                <sup className={`ml-0 ${author.isHighlighted ? 'text-accent-opposite' : 'text-neutral-600 dark:text-neutral-400'}`}>*</sup>
+                                                <sup className={`ml-0 ${author.isHighlighted ? 'text-author-highlight' : 'text-publication-authors'}`}>*</sup>
                                             )}
                                             {idx < pub.authors.length - 1 && ', '}
                                         </span>
@@ -138,7 +165,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={`https://doi.org/${pub.doi}`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover transition-colors"
                                             >
                                                 DOI
                                             </a>
@@ -148,7 +175,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.url}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover transition-colors"
                                             >
                                                 URL
                                             </a>
@@ -158,7 +185,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                                                 href={pub.code}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white transition-colors"
+                                                className="inline-flex items-center px-3 py-1 rounded-md text-xs font-medium bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover transition-colors"
                                             >
                                                 Code
                                             </a>
@@ -166,11 +193,13 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         {pub.abstract && (
                                             <button
                                                 onClick={() => setExpandedAbstractId(expandedAbstractId === pub.id ? null : pub.id)}
+                                                aria-expanded={expandedAbstractId === pub.id}
+                                                aria-controls={abstractPanelId}
                                                 className={cn(
                                                     "inline-flex items-center px-3 py-1 rounded-md text-xs font-medium transition-colors",
                                                     expandedAbstractId === pub.id
-                                                        ? "bg-accent text-white"
-                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                                                        ? "bg-accent text-publication-control-hover"
+                                                        : "bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover"
                                                 )}
                                             >
                                                 <DocumentTextIcon className="h-3 w-3 mr-1.5" />
@@ -180,11 +209,13 @@ export default function PublicationsList({ config, publications, embedded = fals
                                         {pub.bibtex && (
                                             <button
                                                 onClick={() => setExpandedBibtexId(expandedBibtexId === pub.id ? null : pub.id)}
+                                                aria-expanded={expandedBibtexId === pub.id}
+                                                aria-controls={bibtexPanelId}
                                                 className={cn(
                                                     "inline-flex items-center px-2 py-1 rounded-md text-xs font-medium transition-colors",
                                                     expandedBibtexId === pub.id
-                                                        ? "bg-accent text-white"
-                                                        : "bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-accent hover:text-white"
+                                                        ? "bg-accent text-publication-control-hover"
+                                                        : "bg-neutral-100 dark:bg-neutral-800 text-publication-control hover:bg-accent hover:text-publication-control-hover"
                                                 )}
                                             >
                                                 <BookOpenIcon className="h-3 w-3 mr-1.5" />
@@ -198,6 +229,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     {expandedAbstractId === pub.id && pub.abstract ? (
                                         <motion.div
                                             key="abstract"
+                                            id={abstractPanelId}
+                                            role="region"
+                                            aria-label={`Abstract: ${pub.title}`}
                                             initial={{ opacity: 0, height: 0 }}
                                             animate={{ opacity: 1, height: 'auto' }}
                                             exit={{ opacity: 0, height: 0 }}
@@ -214,6 +248,9 @@ export default function PublicationsList({ config, publications, embedded = fals
                                     {expandedBibtexId === pub.id && pub.bibtex ? (
                                         <motion.div
                                             key="bibtex"
+                                            id={bibtexPanelId}
+                                            role="region"
+                                            aria-label={`BibTeX: ${pub.title}`}
                                             initial={{ opacity: 0, height: 0 }}
                                             animate={{ opacity: 1, height: 'auto' }}
                                             exit={{ opacity: 0, height: 0 }}
@@ -256,8 +293,8 @@ export default function PublicationsList({ config, publications, embedded = fals
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
         >
             <div className="mb-3">

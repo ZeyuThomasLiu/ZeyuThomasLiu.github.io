@@ -1,17 +1,23 @@
 import fs from 'fs';
 import path from 'path';
 import { parse } from 'smol-toml';
+import { parseBibTeX } from './bibtexParser';
+import { resolvePublicationCitations } from './publicationReferences';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
 export function getMarkdownContent(filename: string): string {
+    let markdown: string;
     try {
         const filePath = path.join(CONTENT_DIR, filename);
-        return fs.readFileSync(filePath, 'utf-8');
+        markdown = fs.readFileSync(filePath, 'utf-8');
     } catch (error) {
         console.error(`Error loading markdown file ${filename}:`, error);
         return '';
     }
+    return markdown.includes('[@')
+        ? resolvePublicationCitations(markdown, parseBibTeX(getBibtexContent('publications.bib')))
+        : markdown;
 }
 
 export function getBibtexContent(filename: string): string {

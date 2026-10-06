@@ -8,6 +8,8 @@ import { getConfig } from "@/lib/config";
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig();
   return {
+    metadataBase: new URL('https://zeyuthomasliu.github.io/'),
+    alternates: { canonical: '/' },
     title: {
       default: config.site.title,
       template: `%s | ${config.site.title}`
@@ -21,6 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "en_US",
+      url: "/",
       title: config.site.title,
       description: config.site.description,
       siteName: `${config.author.name}'s Academic Website`,

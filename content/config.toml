@@ -1,13 +1,13 @@
 [site]
 title = "Zeyu (Thomas) Liu"
-description = "PhD student at the Yale University."
+description = "PhD student at Yale University."
 favicon = ""
 
 [author]
 name = "Zeyu Liu"
 title = "PhD Student"
 institution = "Yale University"
-avatar = "/bio.jpg"
+avatar = "/portrait-2026.png"
 
 [social]
 # Contact information (leave blank or delete to hide)
@@ -33,7 +33,7 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Teaching"
+title = "Teaching and Mentoring"
 type = "page"
 target = "teaching"
 href = "/teaching"

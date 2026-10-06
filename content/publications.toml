@@ -1,4 +1,4 @@
 type = "publication"
 title = "Publications"
-description = "Publications below are listed in alphabetical order (either among all authors or among student authors), unless marked with *, which denotes the main contributor.\nPapers without a URL are currently in preparation for ePrint and will be available soon."
+description = "Authors are generally listed alphabetically, as customary in cryptography. For papers with non-alphabetical author order, * denotes first or co-first authorship."
 source = "publications.bib"

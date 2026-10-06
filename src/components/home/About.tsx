@@ -7,12 +7,14 @@ interface AboutProps {
     content: string;
     title?: string;
     listSpacingClassName?: string;
+    listTextClassName?: string;
 }
 
 export default function About({
     content,
     title = 'About',
     listSpacingClassName,
+    listTextClassName = 'text-[15px]',
 }: AboutProps) {
     return (
         <motion.section
@@ -42,17 +44,20 @@ export default function About({
                                 {children}
                             </ol>
                         ),
-                        li: ({ children }) => <li className="pl-1 text-[15px]">{children}</li>,
-                        a: ({ ...props }) => (
+                        li: ({ children }) => <li className={`pl-1 ${listTextClassName}`}>{children}</li>,
+                        a: ({ href, title, children }) => (
                             <a
-                                {...props}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-accent font-sm transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
-                            />
+                                href={href}
+                                title={title}
+                                target={href?.startsWith('http') ? '_blank' : undefined}
+                                rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                className="text-link-text hover:text-link-text-hover font-sm transition-all duration-200 rounded hover:bg-accent/10 hover:shadow-sm"
+                            >
+                                {children}
+                            </a>
                         ),
                         blockquote: ({ children }) => (
-                            <blockquote className="border-l-4 border-accent/50 pl-4 italic my-4 text-neutral-600 dark:text-neutral-500">
+                            <blockquote className="my-3 rounded-lg border-l-4 border-accent bg-accent/5 px-4 py-3 text-sm leading-snug text-primary [&_strong]:text-[15px] [&_p]:mb-1 [&_p:last-child]:mb-0">
                                 {children}
                             </blockquote>
                         ),

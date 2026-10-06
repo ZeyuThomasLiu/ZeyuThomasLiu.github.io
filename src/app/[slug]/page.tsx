@@ -17,7 +17,7 @@ import { Metadata } from 'next';
 export function generateStaticParams() {
     const config = getConfig();
     return config.navigation
-        .filter(nav => nav.type === 'page' && nav.target !== 'about') // 'about' is handled by root page
+        .filter(nav => nav.type === 'page' && !['about', 'baoliu'].includes(nav.target)) // Dedicated routes handle these pages.
         .map(nav => ({
             slug: nav.target,
         }));
@@ -31,9 +31,21 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         return {};
     }
 
+    const config = getConfig();
+    const description = pageConfig.description || `${pageConfig.title} by ${config.author.name}.`;
+
     return {
         title: pageConfig.title,
-        description: pageConfig.description,
+        description,
+        alternates: { canonical: `/${slug}/` },
+        openGraph: {
+            type: 'website',
+            locale: 'en_US',
+            title: `${pageConfig.title} | ${config.site.title}`,
+            description,
+            url: `/${slug}/`,
+            siteName: `${config.author.name}'s Academic Website`,
+        },
     };
 }
 
