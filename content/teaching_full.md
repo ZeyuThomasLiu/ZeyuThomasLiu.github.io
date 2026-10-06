@@ -51,7 +51,7 @@
 - Mentoring research on OMR and FHE.
 - Joint publications: [@CCS:FLWT26], [@CCS:LLWXYZ26], [@AC:LSTW25], [@CCS:LWF25], [@EC:LSTW25], [@AC:LiuWan24], [@USENIX:LiuTroWan24], [@SP:LiuTroWan24], [@AC:LiuWan23].
 
-### Michael Tu and Nava Minsky-Primus
+### Nava Minsky-Primus and Michael Tu
 
 - Dec. 2024–June 2025
 - Undergraduate students, Yale University.
