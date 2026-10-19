@@ -1,0 +1,18 @@
+Crimson Text - existing Google Fonts v19 Latin web fonts
+Downloaded without modification on 2026-10-19.
+License: SIL Open Font License 1.1; see the complete copyright and license in OFL.txt.
+License source: https://raw.githubusercontent.com/google/fonts/main/ofl/crimsontext/OFL.txt
+Upstream project: https://github.com/googlefonts/Crimson
+Only the normal 400 and 600 faces used by this site are bundled.
+
+crimson-text-v19-latin-400-normal.woff2
+Weight: 400; style: normal; subset: Latin
+Source: https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2
+Bytes: 25184
+SHA-256: 538c7067580f457dd3dd98ebaabeb19405c12bdd01674d3db8fd9948ee73c862
+
+crimson-text-v19-latin-600-normal.woff2
+Weight: 600; style: normal; subset: Latin
+Source: https://fonts.gstatic.com/s/crimsontext/v19/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNQ.woff2
+Bytes: 26012
+SHA-256: e2ca4f57a77f4db70d61c4d16e748545ce2000e0252be1f67fa1c964040f9b9b
