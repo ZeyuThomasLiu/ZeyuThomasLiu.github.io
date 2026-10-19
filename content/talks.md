@@ -1,7 +1,7 @@
 ## Oblivious Message Retrieval: Foundations and Recent Advances
 
 - Stanford University Security Seminar (upcoming)
-- Duke University (upcoming)
+- Duke University
 - Northwestern University Cryptography Reading Group
 - SJTU Cryptography Reading Group
 - FHE.org meetup
