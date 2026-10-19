@@ -32,10 +32,10 @@ title = "Talks"
 id = "selected_teaching"
 type = "markdown"
 source = "teaching_experience.md"
-title = "Teaching Experience Summary"
+title = "Teaching & Mentoring"
 
 [[sections]]
 id = "academic_services"
 type = "markdown"
 source = "academic_services.md"
-title = "Academic Services"
+title = "Academic Service"
