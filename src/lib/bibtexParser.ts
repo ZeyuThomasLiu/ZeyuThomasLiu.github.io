@@ -2,7 +2,7 @@ import { Publication, PublicationType, ResearchArea } from '@/types/publication'
 import { getConfig } from './config';
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
-const bibtexParse = require('bibtex-parse-js');
+const bibtexParse = require('@orcid/bibtex-parse-js');
 
 // Map BibTeX entry types to our publication types
 const typeMapping: Record<string, PublicationType> = {
