@@ -182,7 +182,7 @@ export default function Home() {
   return (
     <div className={`${sectionStyles.homeLayout} max-w-6xl mx-auto px-4 sm:px-6 lg:px-0 py-8 bg-background min-h-screen`}>
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-[25fr_75fr] gap-20">
+      <div className={`${sectionStyles.contentGrid} grid grid-cols-1 lg:grid-cols-[25fr_75fr] gap-20`}>
 
         {/* Left Column - Profile */}
         <div className={sectionStyles.profileColumn}>
@@ -195,7 +195,7 @@ export default function Home() {
         </div>
 
         {/* Right Column - Content */}
-        <div className="min-w-0 space-y-8">
+        <div className={`${sectionStyles.contentColumn} min-w-0 space-y-8`}>
           <SectionNavigation items={sectionLinks} />
           {pagesToShow.map((page) => (
             <section key={page.id} id={page.id} className="scroll-mt-24 space-y-8">
