@@ -52,14 +52,13 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        {/* Speed up Inter font connections */}
-        <link rel="dns-prefetch" href="https://google-fonts.jialeliu.com" />
-        <link rel="preconnect" href="https://google-fonts.jialeliu.com" crossOrigin="" />
-        {/* Keep Inter's stylesheet stable before and during React hydration. */}
+        {/* Load the site's sans-serif text face from this site. */}
         <link
-          rel="stylesheet"
-          id="gfonts-css"
-          href="https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="preload"
+          href="/fonts/inter/inter-v20-latin-variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
         <script
           dangerouslySetInnerHTML={{

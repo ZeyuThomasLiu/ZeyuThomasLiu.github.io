@@ -1,0 +1,32 @@
+Inter v20 Latin variable webfont
+
+Font file:
+  inter-v20-latin-variable.woff2
+
+Source:
+  Google Fonts CSS API request:
+  https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap
+
+  Google Fonts-hosted Latin variable asset returned by that stylesheet:
+  https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2
+
+Retrieved: 2026-10-21
+File size: 48,256 bytes
+SHA-256: 3100E775E8616CD2611BEECFA23A4263D7037586789B43F035236A2E6FBD4C62
+Style: normal
+Weight range used by this site: 300-700
+Subset: Latin
+
+The asset is stored without further modification from the file distributed by
+Google Fonts. It is the same Latin variable file that the site's prior external
+Google Fonts-compatible stylesheet served for each requested weight, preserving
+the existing Inter outlines and metrics while replacing the runtime dependency.
+
+License:
+  SIL Open Font License 1.1; see OFL.txt in this directory.
+  OFL.txt was retrieved from the official google/fonts repository at commit:
+  47d54ca1ebb14fd864695f1d39dc734f39017c33
+  https://github.com/google/fonts/tree/47d54ca1ebb14fd864695f1d39dc734f39017c33/ofl/inter
+
+Upstream project:
+  https://github.com/rsms/inter
