@@ -120,7 +120,22 @@
 
   .profileColumn {
     position: relative;
-    left: max(-4.75rem, calc(-1rem - max(0rem, (100vw - 72rem) / 2)));
+    --profile-alignment-offset: max(-4.75rem, calc(-1rem - max(0rem, (100vw - 72rem) / 2)));
+    /* Keep the original center, but fit the profile inside the viewport. */
+    --profile-safe-offset: calc(0.5rem - max(0rem, (100vw - 72rem) / 2));
+    --profile-gutter-adjustment: max(0rem, calc(var(--profile-safe-offset) - var(--profile-alignment-offset)));
+    min-width: 16.25rem;
+    left: calc(var(--profile-alignment-offset) + var(--profile-gutter-adjustment));
+  }
+
+  .profileColumn > div {
+    width: calc(100% - var(--profile-gutter-adjustment) - var(--profile-gutter-adjustment));
+  }
+
+  .profileColumn [data-profile-portrait] {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
   }
 
   .contentGrid {
@@ -145,7 +160,7 @@
 
 @media (min-width: 80rem) and (max-width: 95.999rem) {
   .profileColumn {
-    left: max(calc(0.01125rem - 6.25vw), calc(35.25rem - 50vw));
+    --profile-alignment-offset: max(calc(0.01125rem - 6.25vw), calc(35.25rem - 50vw));
   }
 }
 

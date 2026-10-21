@@ -55,38 +55,12 @@ export default function RootLayout({
         {/* Speed up Inter font connections */}
         <link rel="dns-prefetch" href="https://google-fonts.jialeliu.com" />
         <link rel="preconnect" href="https://google-fonts.jialeliu.com" crossOrigin="" />
-        {/* Non-blocking Inter: preload + print media swap to avoid render-blocking */}
-        <link
-          rel="preload"
-          as="style"
-          href="https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        />
+        {/* Keep Inter's stylesheet stable before and during React hydration. */}
         <link
           rel="stylesheet"
           id="gfonts-css"
           href="https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-          media="print"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                var l = document.getElementById('gfonts-css');
-                if (!l) return;
-                if (l.media !== 'all') {
-                  l.addEventListener('load', function(){ try { l.media = 'all'; } catch(e){} });
-                }
-              })();
-            `,
-          }}
-        />
-        <noscript>
-          {/* Fallback for no-JS environments */}
-          <link
-            rel="stylesheet"
-            href="https://google-fonts.jialeliu.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-          />
-        </noscript>
         <script
           dangerouslySetInnerHTML={{
             __html: `
